@@ -249,3 +249,42 @@ button[type="submit"] {
     color: #fafafa;
     background-color: #e84610;
 }
+
+/*--------------------------------------------------Gallery*/
+
+.flex-container {
+    width: 1280px;
+    min-height: 500px;
+    background: #fff;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container .box {
+    position: relative;
+    width: 250px;
+    height: 167px;
+    background: #000000;
+    margin: 25px;
+    display: inline-block
+}
+
+.flex-container .box .imgBox {
+    position: relative;
+}
+
+.flex-container .box .imgBox img {
+    max-width: 250px;
+    width: 250px;
+    max-height: 167px;
+    transition: transform 2s;
+}
+
+.flex-container .box:hover .imgBox img {
+    transform: scale(1.15);
+}
+
+
+
